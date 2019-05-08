@@ -1,0 +1,32 @@
+.school {
+  display: flex;
+  width: 100%;
+  max-width: $max-page-width;
+  margin: 0 auto;
+  align-items: center;
+    .section {
+    width: 100%;
+    margin-bottom: 80px;
+      .title {
+        color: $dark-grey;
+        font-weight: 600;
+        margin-bottom: 20px;
+        display: inline;
+      }
+      .not-found {
+        text-align: center;
+        width: 100%;
+        display: block;
+        font-weight: 600;
+      }
+        .content {
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+        }
+        .button {
+          margin-left:10px;
+           @include blueButton();
+        }
+      }
+}
